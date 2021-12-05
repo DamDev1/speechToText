@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.speachtotextContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.speachtotextContainer .microphoneContainer{
+    background: rgba(147, 64, 224, 0.836);
+    width: 100%;
+    height: 100vh;
+}
+
+.microphoneContainer  .microphone{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.contentText{
+    padding: 20px;
+    margin-top: 30%;
+}
+
+.demo{
+    font-size: 20px;
+    position: relative;
+}
+
+.demo::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 30px;
+    background: black;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%{
+        background: white;
+    }
+
+    10%{
+        background: white;
+    }
+
+    50%{
+        background: black;
+    }
+
+    60%{
+        background: black;
+    }
+
+    100%{
+        background: white;
+    }
+}
