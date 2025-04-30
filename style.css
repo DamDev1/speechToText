@@ -33,6 +33,7 @@ body{
 .demo{
     font-size: 20px;
     position: relative;
+    color: rgba(147, 64, 224, 0.836);
 }
 
 .demo::after{
